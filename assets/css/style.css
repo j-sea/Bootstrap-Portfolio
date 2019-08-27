@@ -1,0 +1,222 @@
+body {
+    background: url('../images/papyrus.png') repeat;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#container-header {
+    background-color: #ffffff;
+    min-height: 90px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 38px;
+}
+
+#container-nav {
+    padding: 0px;
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.nav-item {
+    line-height: 18px;
+    padding: 0px 18px;
+    text-align: right;
+}
+
+.nav-item ~ .nav-item {
+    border-left: thin solid #ddd;
+}
+
+.navbar-nav > .nav-item.active > .nav-link,
+.navbar-nav > .nav-item > .nav-link {
+    color: #777;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+    line-height: 17px;
+}
+
+.nav-item.active > .nav-link {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover,
+.navbar-nav > .nav-item > .nav-link:focus {
+    color: #222;
+    text-decoration: underline;
+}
+
+#container-main {
+    background-color: #fff;
+    max-width: 960px;
+    padding: 30px;
+    border: thin solid #cccccc;
+    box-sizing: border-box;
+}
+
+#container-footer {
+    background-color: #666666;
+    color: #fff;
+    height: 70px;
+    border-top: 8px solid #4aaaa5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+#container-footer p {
+    line-height: 24px;
+    align-self: flex-end;
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 4px;
+}
+
+#site-title {
+    background-color: #4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    padding: 0px;
+    line-height: 90px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0px 25px;
+}
+
+#page-title {
+    color: #4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+
+
+
+
+#contact-form label, #contact-name, #contact-email, #contact-message {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #777;
+}
+
+#contact-name, #contact-email, #contact-message {
+    box-sizing: border-box;
+    padding: 4px;
+    border: thin solid #ddd;
+    margin: 5px 0px 20px;
+}
+
+#contact-name:hover, #contact-email:hover, #contact-message:hover,
+#contact-name:focus, #contact-email:focus, #contact-message:focus {
+    border: thin solid #888;   
+}
+
+#contact-message {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#contact-form button {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 12px 35px;
+    border: 3px double transparent;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#contact-form button:hover, #contact-form button:focus {
+    border: 3px double white;
+}
+
+#contact-form button:active {
+    color: black;
+}
+
+
+
+
+#container-gallery {
+    margin: -10px 0px 0px -10px;
+}
+
+.gallery-item {
+    position: relative;
+    margin: 20px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.gallery-item > img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery-item > figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.gallery-item > figcaption > a {
+    display: block;
+    text-align: center;
+    height: 150%;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: -10px;
+    color: #fff;
+    opacity: 1;
+    transition: bottom 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.gallery-item > figcaption > a:hover {
+    bottom: 0px;
+    color: #5e2f17;
+    opacity: 0.85;
+}
+
+.gallery-item > figcaption > a > span {
+    display: block;
+    padding: 16px 0px;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Sticky Footer - Start */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 108px;
+}
+#container-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+/* Sticky Footer - End */
