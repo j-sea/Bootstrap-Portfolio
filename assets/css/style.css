@@ -98,6 +98,12 @@ body {
 
 
 
+#about-photo {
+    width: 300px;
+}
+
+
+
 
 #contact-form label, #contact-name, #contact-email, #contact-message {
     display: block;
